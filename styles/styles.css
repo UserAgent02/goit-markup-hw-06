@@ -668,7 +668,14 @@ ul, ol {
     color: var(--main-color);
     
 }
+
 .footer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
     padding: 10px 32px;
     font-family: 'Roboto';
     font-weight: 700;
@@ -694,10 +701,13 @@ ul, ol {
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388; 
-  }
+}
 
-
-
+.form-footer-icon {
+    fill: #ffffff;
+    margin-left: 10px;
+    display: flex;
+}
 
 
 
