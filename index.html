@@ -328,7 +328,7 @@
                     </a></li>
                 </ul>
             </div>  
-            <div class="form-footer" autocomplete="off">
+            <div class="form-footer" autocomplete="on">
                 <h2 class="form-footer-text">Подпишитесь на рассылку</h2>
                     <form class="soc-footer-list">
                         <input class="footer-email-input" type="email" placeholder="E-mail" name="enter email">
@@ -357,24 +357,32 @@
     <form class="modal-form">
         <label class="modal-field-name">
             <span class="modal-field-label">Имя.</span>
-            <input
-            type="text"
-            class="modal-input"
-            name="user-name"
-            required
-            minlength="2">
+            <span class="modal-input-wrap">
+                <input type="text" class="modal-input" name="user-name" required minlength="2">
+            <svg class="input-icon" wigth="18" height="18">
+                <use href="images/symbol-defs.svg#icon-person"></use>
+            </svg>
+            </span>
         </label>    
             
         <label class="modal-field-email">
-            <span class="modal-field-label">Почта.</span>   
+            <span class="modal-field-label">Почта.</span>  
+            <span class="modal-input-wrap">
             <input type="email" class="modal-input" name="user-email" required/>
+            <svg class="input-icon" wigth="18" height="18">
+                <use href="images/symbol-defs.svg#icon-email"></use>
+            </svg>
+            </span>
         </label>
         <label class="modal-field-tel">  
-                <span class="modal-field-label">Телефон.</span>  
+                <span class="modal-field-label">Телефон.</span>
+                <span class="modal-input-wrap">  
                 <input type="tel" class="modal-input" required 
-                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-                minlength="13"
-                maxlength="13"/>
+                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="13" maxlength="13"/>
+                <svg class="input-icon" wigth="18" height="18">
+                    <use href="images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                </span>
         </label>
 
         <label class="modal-field-comment">
@@ -383,7 +391,6 @@
             class="modal-comment"
             placeholder="Введите текст"></textarea>
         </label> 
-
         <div class="modal-field-checkbox">
             <input
             type="checkbox"
@@ -392,15 +399,17 @@
             name="policy"
             value="policy" 
             />
-            <!-- <input type="checkbox" value="input-check" id="input-check" name="input-check" class="checkbox-input"> -->
+           
             <label for="input-check" class="modal-check-box">
-                <span>
-                    <svg class="icon-checkbox" width="16" height="15">
+                <span class="icon-checkbox">
+                    <svg width="16" height="15">
                         <use href="images/symbol-defs.svg#icon-agree"></use>
                     </svg>
-                </span>Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                </span>Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-link">Условия договора</a></label>
         </div>
+        <div class="button-modal-form">
         <button type="submit" class="modal-button">Отправить</button>
+        </div>
     </form>
     </div>
 </div>
